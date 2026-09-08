@@ -1,0 +1,51 @@
+id_paire,competence_marche,segment_pe_candidat,module_pe_candidat,type_pair_annotateur1,type_pair_annotateur2,similarite_cosinus
+PAIRE_001,Documenter les configurations réseau,Méthodes de configuration des équipements réseau,SN_MQ2,,,0.8113
+PAIRE_002,Gérer les accès VPN,Mise en œuvre d’un réseau VPN,SN_MQ8,,,0.9417
+PAIRE_003,Windows,Système de fichiers Windows,SN_MQ4,,,0.7629
+PAIRE_004,logiciels bureautiques,Utilisation d’un système d’inventaire matériel et logiciel,SN_MQ1,,,0.7205
+PAIRE_005,fibre optique,Fibres optiques,SN_MQ3,,,0.9688
+PAIRE_006,gestion du réseau local,Configurer un réseau local,SN_MQ2,,,0.914
+PAIRE_007,Gérer les comptes utilisateurs,Sécurisation des comptes utilisateurs,SN_MQ9,,,0.9225
+PAIRE_008,routeurs clients,Sauvegarde sur système client,SN_MQ11,,,0.7212
+PAIRE_009,Mettre en place la sécurité du réseau,Mise en œuvre de la sécurité réseau,SN_MQ10,,,0.9458
+PAIRE_010,configurer les postes de travail,Configuration de l’environnement de travail,SN_MQ1,,,0.8155
+PAIRE_011,fibres optiques,Fibres optiques,SN_MQ3,,,0.9797
+PAIRE_012,diagnostic des pannes,Méthodes de diagnostic des pannes,SN_MQ14,,,0.9479
+PAIRE_013,réseau,Menaces réseau,SN_MQ10,,,0.8863
+PAIRE_014,protocoles,Encapsulation de protocoles,SN_MQ8,,,0.924
+PAIRE_015,Réaliser des mesures sur les lignes,Sauvegarde en ligne,SN_MQ11,,,0.6145
+PAIRE_016,sécurité informatique,Sécurité réseau,SN_MQ10,,,0.8159
+PAIRE_017,Rédiger la documentation technique,Partage des ressources et des dossiers,SN_MQ4,,,0.6239
+PAIRE_018,service DH,DHCP,SN_MQ5,,,0.7158
+PAIRE_019,Administrer le réseau local,Configurer un réseau local,SN_MQ2,,,0.9476
+PAIRE_020,Gérer l'inventaire du matériel informatique,Composants matériels informatiques,SN_MQ14,,,0.8479
+PAIRE_021,Remplir les comptes rendus d'intervention,Documentation et reporting des interventions,SN_MQ5,,,0.8129
+PAIRE_022,mérique,Vers,SN_MQ10,,,0.8118
+PAIRE_023,routage,Routage,SN_MQ5,,,0.8867
+PAIRE_024,Configurer les switchs,Configuration et dépannage du routage,SN_MQ5,,,0.6473
+PAIRE_025,la connectivité,Câbler et connecter les équipements réseau,SN_MQ2,,,0.779
+PAIRE_026,administrer les VPN entre sites,Mise en œuvre d’un réseau VPN,SN_MQ8,,,0.9156
+PAIRE_027,Gérer le plan d'adressage IP,Déploiement d’un système IPS,SN_MQ10,,,0.7718
+PAIRE_028,Microsoft,Système de fichiers Windows,SN_MQ4,,,0.5466
+PAIRE_029,maintenance préventive du réseau,Maintenance préventive des réseaux locaux,SN_MQ15,,,0.86
+PAIRE_030,Active Directory,Active Directory,SN_MQ4,,,1.0
+PAIRE_031,administrer le réseau LAN,Configuration des réseaux sans fil WLAN,SN_MQ6,,,0.7674
+PAIRE_032,connecter les équipements réseau,Câbler et connecter les équipements réseau,SN_MQ2,,,0.9773
+PAIRE_033,Configurer les protocoles de routage,Configuration du routage réseau,SN_MQ7,,,0.8579
+PAIRE_034,maintenance préventive des PCs,Maintenance des PCs,SN_MQ14,,,0.9426
+PAIRE_035,protocoles VPN,Mise en œuvre d’un réseau VPN,SN_MQ8,,,0.9209
+PAIRE_036,détecter les incidents,Méthodes de détection des erreurs,SN_MQ3,,,0.6501
+PAIRE_037,Réaliser le câblage,Modem câble,SN_MQ7,,,0.8898
+PAIRE_038,Superviser les performances du réseau,Supervision du fonctionnement du réseau,SN_MQ15,,,0.8774
+PAIRE_039,IDS,IDS,SN_MQ10,,,1.0
+PAIRE_040,Configurer les imprimantes réseau,Composants matériels informatiques,SN_MQ14,,,0.5491
+PAIRE_041,test réseau,Outils de test réseau,SN_MQ15,,,0.9634
+PAIRE_042,support technique aux utilisateurs,Sauvegarde sur système client,SN_MQ11,,,0.7241
+PAIRE_043,Raccorder les clients au réseau,Supervision du fonctionnement du réseau,SN_MQ15,,,0.7205
+PAIRE_044,Sécuriser le réseau,Mise en œuvre de la sécurité réseau,SN_MQ10,,,0.8827
+PAIRE_045,Effectuer les sauvegardes des données,Sauvegarde des données,SN_MQ11,,,0.8725
+PAIRE_046,Diagnostiquer les pannes matérielles,Diagnostic des pannes matérielles,SN_MQ14,,,0.977
+PAIRE_047,cuivre,Relais,SN_MQ3,,,0.7582
+PAIRE_048,administrer l'architecture réseau,Développement d’applications réseau,SN_MQ13,,,0.8606
+PAIRE_049,CCNA/CCNP,NCP,SN_MQ7,,,0.641
+PAIRE_050,Huawei,WAN,SN_MQ7,,,0.4155

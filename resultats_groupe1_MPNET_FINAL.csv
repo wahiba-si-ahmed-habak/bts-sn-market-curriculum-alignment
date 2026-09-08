@@ -1,0 +1,107 @@
+competence,similarite,meilleur_match_pe,module_pe,statut
+configurer les équipements réseau,0.9304,Méthodes de configuration des équipements réseau,SN_MQ2,ALIGNE
+Administrer le réseau local,0.9249,Configurer un réseau local,SN_MQ2,ALIGNE
+gérer les VLAN,0.9127,Création des VLAN,SN_MQ2,ALIGNE
+Configurer les adresses IP,0.6616,IPsec,SN_MQ8,GAP
+Gérer le service DNS interne,0.8705,Installation et configuration du service DNS,SN_MQ5,ALIGNE
+Mettre en place les règles de pare-feu,0.7616,Mise en place d’un pare-feu réseau,SN_MQ10,GAP
+Superviser l'état du réseau,0.94,Supervision du fonctionnement du réseau,SN_MQ15,ALIGNE
+résoudre les pannes réseau,0.8275,Diagnostic des pannes réseau,SN_MQ15,ALIGNE
+maintenance préventive du réseau,0.9124,Maintenance préventive des réseaux locaux,SN_MQ15,ALIGNE
+Documenter les configurations réseau,0.8469,Configuration de l’authentification réseau,SN_MQ10,ALIGNE
+configuration des switchs,0.6556,Fonctionnement des switchs VLAN,SN_MQ2,GAP
+sécurité réseau,0.9933,Sécurité réseau,SN_MQ10,ALIGNE
+Windows Server,0.919,Approbations Windows Server,SN_MQ9,ALIGNE
+Administrer les serveurs Windows,0.8683,Approbations Windows Server,SN_MQ9,ALIGNE
+Gérer Active Directory,0.9199,Active Directory,SN_MQ4,ALIGNE
+les comptes utilisateurs,0.8667,Gestion des comptes utilisateurs dans un domaine,SN_MQ4,ALIGNE
+administrer le réseau LAN,0.8291,Réseau local LAN,SN_MQ15,ALIGNE
+Mettre en place des stratégies de sauvegarde,0.9844,Mise en œuvre d’une stratégie de sauvegarde,SN_MQ11,ALIGNE
+Sécuriser le réseau,0.9731,Sécurité réseau,SN_MQ10,ALIGNE
+Gérer les accès VPN,0.9447,VPN,SN_MQ8,ALIGNE
+les sites distants,0.6141,Accès réseau distant,SN_MQ7,GAP
+Superviser les performances du réseau,0.8945,Supervision du fonctionnement du réseau,SN_MQ15,ALIGNE
+Assurer la maintenance curative,0.6933,Application des procédures de maintenance,SN_MQ14,GAP
+configurer les nouveaux équipements,0.831,Configuration du matériel,SN_MQ1,ALIGNE
+projets d'évolution du réseau,0.8879,Réalisation de plans réseau,SN_MQ5,ALIGNE
+Active Directory,1.0,Active Directory,SN_MQ4,ALIGNE
+protocoles réseau,0.9955,Protocoles réseau,SN_MQ15,ALIGNE
+sécurité informatique,0.8997,Sécurisation des réseaux informatiques,SN_MQ10,ALIGNE
+procédures de sauvegarde,0.9275,Mise en œuvre de sauvegardes différentielles,SN_MQ11,ALIGNE
+configurer les postes de travail,0.8756,Configuration de l’environnement de travail,SN_MQ1,ALIGNE
+raccorder les équipements réseau,0.9232,Câbler et connecter les équipements réseau,SN_MQ2,ALIGNE
+Configurer les imprimantes réseau,0.6797,Configuration du matériel,SN_MQ1,GAP
+Diagnostiquer les pannes matérielles,0.9913,Diagnostic des pannes matérielles,SN_MQ14,ALIGNE
+support technique aux utilisateurs,0.7363,Installation et exploitation d’utilitaires,SN_MQ1,GAP
+Maintenir le parc informatique,0.8248,Maintenance curative des postes informatiques,SN_MQ14,ALIGNE
+gestion du réseau local,0.8535,Configurer un réseau local,SN_MQ2,ALIGNE
+Installer les systèmes d'exploitation,0.9863,Installer des systèmes d’exploitation,SN_MQ1,ALIGNE
+Gérer les comptes utilisateurs,0.9105,Gestion des comptes utilisateurs dans un domaine,SN_MQ4,ALIGNE
+Effectuer les sauvegardes des données,0.7999,Sauvegarde et restauration des données,SN_MQ11,ALIGNE
+diagnostic des pannes,0.9256,Organigramme de diagnostic des pannes,SN_MQ14,ALIGNE
+matériel informatique,0.9332,Composants matériels informatiques,SN_MQ14,ALIGNE
+réseau local,0.9001,Configurer un réseau local,SN_MQ2,ALIGNE
+administrer l'architecture réseau,0.8313,Programmation réseau,SN_MQ13,ALIGNE
+Configurer le routage,0.9219,Configuration et dépannage du routage,SN_MQ5,ALIGNE
+protocoles de communication,0.8325,Protocoles réseau,SN_MQ15,ALIGNE
+Mettre en place la sécurité du réseau,0.9776,Sécurité réseau,SN_MQ10,ALIGNE
+Administrer les services DNS,0.901,Installation et configuration du service DNS,SN_MQ5,ALIGNE
+Gérer le câblage,0.8081,Techniques de câblage réseau,SN_MQ2,ALIGNE
+structuré des sites,0.5758,Routage,SN_MQ5,GAP
+administrer les VPN entre sites,0.9305,Mise en œuvre d’un réseau VPN,SN_MQ8,ALIGNE
+Superviser le réseau,0.9515,Supervision du fonctionnement du réseau,SN_MQ15,ALIGNE
+Diagnostiquer les incidents réseau,0.8472,Diagnostic des pannes réseau,SN_MQ15,ALIGNE
+Rédiger la documentation technique,0.6864,Composants matériels informatiques,SN_MQ14,GAP
+équipements Cisco,0.6217,Installation et configuration des équipements d’interconnexion,SN_MQ2,GAP
+configurer les postes informatiques,0.7937,Maintenance curative des postes informatiques,SN_MQ14,ALIGNE
+connecter les équipements réseau,0.9451,Câbler et connecter les équipements réseau,SN_MQ2,ALIGNE
+Configurer les switchs,0.6322,Fonctionnement des switchs VLAN,SN_MQ2,GAP
+réparer les pannes,0.7627,Disque de réparation du système,SN_MQ11,GAP
+désassembler les ordinateurs,0.8081,Assemblage et désassemblage d’un PC,SN_MQ14,ALIGNE
+Installer les logiciels,0.9331,Installation et configuration de logiciels,SN_MQ1,ALIGNE
+mises à jour,0.7205,Mise à jour des logiciels,SN_MQ1,GAP
+Configurer la messagerie des utilisateurs,0.639,Configuration des options de compte utilisateur,SN_MQ4,GAP
+maintenance préventive des PCs,0.8961,Maintenance des PCs,SN_MQ14,ALIGNE
+Gérer l'inventaire du matériel informatique,0.8708,Utilisation d’un système d’inventaire matériel et logiciel,SN_MQ1,ALIGNE
+Assister les utilisateurs à distance,0.7112,Accès réseau distant,SN_MQ7,GAP
+diagnostiquer les pannes,0.8841,Organigramme de diagnostic des pannes,SN_MQ14,ALIGNE
+matériel PC,0.8434,Modification de la configuration matérielle d’un PC,SN_MQ14,ALIGNE
+logiciels bureautiques,0.7298,Utilisation d’un système d’inventaire matériel et logiciel,SN_MQ1,GAP
+Administrer l'infrastructure réseau,0.8847,Administration du routage réseau,SN_MQ5,ALIGNE
+gérer les équipements d'interconnexion,0.9124,Installation et configuration des équipements d’interconnexion,SN_MQ2,ALIGNE
+Mettre en place la sécurité du réseau informatique,0.9771,Sécurisation des réseaux informatiques,SN_MQ10,ALIGNE
+Administrer Active Directory,0.9515,Active Directory,SN_MQ4,ALIGNE
+stratégies de groupe,0.7013,Imbrication des groupes dans un domaine,SN_MQ4,GAP
+Gérer les droits d'accès,0.8125,Contrôle d’accès,SN_MQ4,ALIGNE
+Mettre en œuvre les stratégies de sauvegarde et,0.982,Mise en œuvre d’une stratégie de sauvegarde,SN_MQ11,ALIGNE
+Configurer le service,0.7008,Services Pack,SN_MQ15,GAP
+Superviser le fonctionnement du réseau 24/7,0.8037,Supervision du fonctionnement du réseau,SN_MQ15,ALIGNE
+plan de reprise d'activité,0.6435,Élaboration d’un plan de sauvegarde,SN_MQ11,GAP
+Rédiger les procédures d'exploitation,0.7209,Planification d’une stratégie d’autorisation et d’authentification,SN_MQ9,GAP
+réseaux LAN et,0.8458,Réseau local LAN,SN_MQ15,ALIGNE
+Réaliser le câblage,0.7941,Techniques de câblage réseau,SN_MQ2,ALIGNE
+configurer les équipements de transmission,0.8775,Équipements de transmission réseau,SN_MQ3,ALIGNE
+Raccorder les clients au réseau,0.7697,Types de connexion réseau,SN_MQ3,GAP
+Diagnostiquer les pannes sur le réseau,0.9724,Diagnostic des pannes réseau,SN_MQ15,ALIGNE
+Assurer la maintenance des infrastructures,0.7346,Mise en œuvre d’une infrastructure AAA,SN_MQ10,GAP
+Configurer les modems,0.8332,Modem,SN_MQ3,ALIGNE
+déploiement de la fibre optique,0.9421,Fibres optiques,SN_MQ3,ALIGNE
+Réaliser des mesures sur les lignes,0.6428,Mise en œuvre d’une stratégie d’authentification,SN_MQ9,GAP
+Remplir les comptes rendus d'intervention,0.7887,Documentation et reporting des interventions,SN_MQ5,ALIGNE
+fibre optique,0.9639,Fibres optiques,SN_MQ3,ALIGNE
+test réseau,0.9502,Outils de test réseau,SN_MQ15,ALIGNE
+fibres optiques,0.9757,Fibres optiques,SN_MQ3,ALIGNE
+technologies de transmission,0.8898,Modes de transmission,SN_MQ3,ALIGNE
+protocoles télécoms,0.8874,Protocoles réseau,SN_MQ15,ALIGNE
+Administrer le réseau de l'opérateur,0.8461,Supervision du fonctionnement du réseau,SN_MQ15,ALIGNE
+Configurer les routeurs,0.8828,Configuration et dépannage du routage,SN_MQ5,ALIGNE
+Mettre en œuvre la sécurité du réseau,0.981,Mise en œuvre de la sécurité réseau,SN_MQ10,ALIGNE
+Configurer les listes de contrôle d'accès,0.836,Configuration des listes de contrôle d’accès ACL,SN_MQ10,ALIGNE
+Mettre en place des VPN sécurisés,0.9172,VPN,SN_MQ8,ALIGNE
+Gérer le plan d'adressage IP,0.7069,Protocoles réseau,SN_MQ15,GAP
+Configurer les protocoles de routage,0.834,Protocoles réseau,SN_MQ15,ALIGNE
+détecter les incidents,0.7218,Méthodes de détection des erreurs,SN_MQ3,GAP
+Analyser les logs de sécurité,0.8114,Sécurité réseau,SN_MQ10,ALIGNE
+sécurisation des serveurs,0.9351,Implémentation de la sécurité de base des serveurs,SN_MQ9,ALIGNE
+protocoles VPN,0.9467,VPN,SN_MQ8,ALIGNE
+CCNA Security,0.6775,Sécurisation des réseaux informatiques,SN_MQ10,GAP

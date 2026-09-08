@@ -1,0 +1,52 @@
+competence,similarite,meilleur_match_pe,module_pe,statut
+Administrer le réseau local,0.9249,Configurer un réseau local,SN_MQ2,ALIGNE
+Configurer les routeurs,0.8828,Configuration et dépannage du routage,SN_MQ5,ALIGNE
+switchs Cisco,0.68,Fonctionnement des switchs VLAN,SN_MQ2,GAP
+Gérer les services DNS,0.9099,Installation et configuration du service DNS,SN_MQ5,ALIGNE
+Mettre en place des règles de pare-feu,0.7654,Mise en place d’un pare-feu réseau,SN_MQ10,GAP
+Déployer des conteneurs Docker,0.5563,Jumpers de carte mère,SN_MQ14,GAP
+Automatiser les tâches,0.6097,Optimisation du système à l’aide d’utilitaires,SN_MQ1,GAP
+Superviser le réseau,0.9515,Supervision du fonctionnement du réseau,SN_MQ15,ALIGNE
+Administrer les serveurs Windows,0.8683,Approbations Windows Server,SN_MQ9,ALIGNE
+Linux,0.7822,Système de fichiers Linux,SN_MQ4,GAP
+Gérer Active Directory,0.9199,Active Directory,SN_MQ4,ALIGNE
+les comptes utilisateurs,0.8667,Gestion des comptes utilisateurs dans un domaine,SN_MQ4,ALIGNE
+Assurer les sauvegardes des données,0.7989,Sauvegarde et restauration des données,SN_MQ11,ALIGNE
+supervision,0.6096,Sauvegarde complète,SN_MQ11,GAP
+LAN,0.8752,Réseau local LAN,SN_MQ15,ALIGNE
+DHCP,1.0,DHCP,SN_MQ5,ALIGNE
+scripts Python,0.4303,PPTP,SN_MQ8,GAP
+Zabbix,0.4392,Routage,SN_MQ5,GAP
+TCP/IP,0.7039,Protocoles réseau,SN_MQ15,GAP
+protocoles réseau,0.9955,Protocoles réseau,SN_MQ15,ALIGNE
+Docker,0.5249,Sauvegarde à delta,SN_MQ11,GAP
+conteneurisation,0.6317,Relais,SN_MQ3,GAP
+Python,0.4724,PPTP,SN_MQ8,GAP
+l'automatisation,0.64,Optimisation du système à l’aide d’utilitaires,SN_MQ1,GAP
+Windows Server,0.919,Approbations Windows Server,SN_MQ9,ALIGNE
+cloud computing,0.5809,Maintenance des serveurs informatiques,SN_MQ15,GAP
+ique,0.61,Sauvegarde décrémentale,SN_MQ11,GAP
+Licenc,0.7673,Autorisation,SN_MQ9,GAP
+Installer,0.764,Installation et configuration de logiciels,SN_MQ1,GAP
+câbler les équipements réseau,0.9775,Câbler et connecter les équipements réseau,SN_MQ2,ALIGNE
+Configurer les switchs,0.6322,Fonctionnement des switchs VLAN,SN_MQ2,GAP
+réseau local,0.9001,Configurer un réseau local,SN_MQ2,ALIGNE
+Diagnostiquer les pannes réseau,0.9944,Diagnostic des pannes réseau,SN_MQ15,ALIGNE
+Configurer les pare-feux,0.746,Configuration du matériel,SN_MQ1,GAP
+Réaliser des tests de vulnérabilité,0.6043,Outils de test réseau,SN_MQ15,GAP
+Analyser les logs,0.5407,Sauvegarde des données,SN_MQ11,GAP
+Mettre en place des VPN,0.9701,Mise en œuvre d’un réseau VPN,SN_MQ8,ALIGNE
+aux audits de sécurité,0.7159,Supervision et journalisation de la sécurité réseau,SN_MQ10,GAP
+Gérer les comptes utilisateurs,0.9105,Gestion des comptes utilisateurs dans un domaine,SN_MQ4,ALIGNE
+Documenter les interventions,0.9013,Documentation et reporting des interventions,SN_MQ5,ALIGNE
+vulnérabilité,0.6204,Sauvegarde incrémentale,SN_MQ11,GAP
+analyse de logs,0.5077,Routage,SN_MQ5,GAP
+Stormshield,0.486,Bruits et interférences des supports,SN_MQ3,GAP
+Nessus,0.6057,Relais,SN_MQ3,GAP
+SIEM,0.8791,Relais,SN_MQ3,ALIGNE
+câblage,0.839,Câbles coaxiaux,SN_MQ3,ALIGNE
+pare-feux,0.7748,Relais,SN_MQ3,GAP
+VPN,1.0,VPN,SN_MQ8,ALIGNE
+sécurité réseau,0.9933,Sécurité réseau,SN_MQ10,ALIGNE
+protocoles,0.8531,Protocoles réseau,SN_MQ15,ALIGNE
+BTS,0.4985,MBSA,SN_MQ9,GAP

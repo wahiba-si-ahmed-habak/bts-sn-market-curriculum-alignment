@@ -1,0 +1,51 @@
+id_paire,competence_marche,segment_pe_candidat,module_pe_candidat,type_pair_annotateur1,type_pair_annotateur2,type_pair_final,similarite_mpnet
+PAIRE_001,Documenter les configurations réseau,Méthodes de configuration des équipements réseau,SN_MQ2,MATCH,MATCH,MATCH,0.8342
+PAIRE_002,Gérer les accès VPN,Mise en œuvre d’un réseau VPN,SN_MQ8,MATCH,MATCH,MATCH,0.9398
+PAIRE_003,Windows,Système de fichiers Windows,SN_MQ4,NON_MATCH,MATCH,NON_MATCH,0.7121
+PAIRE_004,logiciels bureautiques,Utilisation d’un système d’inventaire matériel et logiciel,SN_MQ1,NON_MATCH,NON_MATCH,NON_MATCH,0.7298
+PAIRE_005,fibre optique,Fibres optiques,SN_MQ3,MATCH,MATCH,MATCH,0.9639
+PAIRE_006,gestion du réseau local,Configurer un réseau local,SN_MQ2,MATCH,MATCH,MATCH,0.8535
+PAIRE_007,Gérer les comptes utilisateurs,Sécurisation des comptes utilisateurs,SN_MQ9,MATCH,NON_MATCH,NON_MATCH,0.8265
+PAIRE_008,routeurs clients,Sauvegarde sur système client,SN_MQ11,NON_MATCH,NON_MATCH,NON_MATCH,0.661
+PAIRE_009,Mettre en place la sécurité du réseau,Mise en œuvre de la sécurité réseau,SN_MQ10,MATCH,MATCH,MATCH,0.976
+PAIRE_010,configurer les postes de travail,Configuration de l’environnement de travail,SN_MQ1,MATCH,MATCH,MATCH,0.8756
+PAIRE_011,fibres optiques,Fibres optiques,SN_MQ3,MATCH,MATCH,MATCH,0.9757
+PAIRE_012,diagnostic des pannes,Méthodes de diagnostic des pannes,SN_MQ14,MATCH,MATCH,MATCH,0.9175
+PAIRE_013,réseau,Menaces réseau,SN_MQ10,NON_MATCH,NON_MATCH,NON_MATCH,0.7732
+PAIRE_014,protocoles,Encapsulation de protocoles,SN_MQ8,NON_MATCH,MATCH,NON_MATCH,0.8417
+PAIRE_015,Réaliser des mesures sur les lignes,Sauvegarde en ligne,SN_MQ11,NON_MATCH,NON_MATCH,NON_MATCH,0.4141
+PAIRE_016,sécurité informatique,Sécurité réseau,SN_MQ10,NON_MATCH,MATCH,NON_MATCH,0.8553
+PAIRE_017,Rédiger la documentation technique,Partage des ressources et des dossiers,SN_MQ4,NON_MATCH,NON_MATCH,NON_MATCH,0.5434
+PAIRE_018,service DH,DHCP,SN_MQ5,NON_MATCH,NON_MATCH,NON_MATCH,0.7535
+PAIRE_019,Administrer le réseau local,Configurer un réseau local,SN_MQ2,MATCH,MATCH,MATCH,0.9249
+PAIRE_020,Gérer l'inventaire du matériel informatique,Composants matériels informatiques,SN_MQ14,NON_MATCH,NON_MATCH,NON_MATCH,0.8048
+PAIRE_021,Remplir les comptes rendus d'intervention,Documentation et reporting des interventions,SN_MQ5,MATCH,MATCH,MATCH,0.7887
+PAIRE_022,mérique,Vers,SN_MQ10,NON_MATCH,NON_MATCH,NON_MATCH,0.5191
+PAIRE_023,routage,Routage,SN_MQ5,MATCH,MATCH,MATCH,0.912
+PAIRE_024,Configurer les switchs,Configuration et dépannage du routage,SN_MQ5,MATCH,NON_MATCH,NON_MATCH,0.5009
+PAIRE_025,la connectivité,Câbler et connecter les équipements réseau,SN_MQ2,MATCH,MATCH,MATCH,0.6622
+PAIRE_026,administrer les VPN entre sites,Mise en œuvre d’un réseau VPN,SN_MQ8,MATCH,MATCH,MATCH,0.9305
+PAIRE_027,Gérer le plan d'adressage IP,Déploiement d’un système IPS,SN_MQ10,NON_MATCH,NON_MATCH,NON_MATCH,0.6916
+PAIRE_028,Microsoft,Système de fichiers Windows,SN_MQ4,NON_MATCH,NON_MATCH,NON_MATCH,0.518
+PAIRE_029,maintenance préventive du réseau,Maintenance préventive des réseaux locaux,SN_MQ15,MATCH,MATCH,MATCH,0.9124
+PAIRE_030,Active Directory,Active Directory,SN_MQ4,MATCH,MATCH,MATCH,1.0
+PAIRE_031,administrer le réseau LAN,Configuration des réseaux sans fil WLAN,SN_MQ6,NON_MATCH,NON_MATCH,NON_MATCH,0.7283
+PAIRE_032,connecter les équipements réseau,Câbler et connecter les équipements réseau,SN_MQ2,MATCH,MATCH,MATCH,0.9451
+PAIRE_033,Configurer les protocoles de routage,Configuration du routage réseau,SN_MQ7,MATCH,MATCH,MATCH,0.8162
+PAIRE_034,maintenance préventive des PCs,Maintenance des PCs,SN_MQ14,MATCH,MATCH,MATCH,0.8961
+PAIRE_035,protocoles VPN,Mise en œuvre d’un réseau VPN,SN_MQ8,MATCH,MATCH,MATCH,0.9385
+PAIRE_036,détecter les incidents,Méthodes de détection des erreurs,SN_MQ3,NON_MATCH,NON_MATCH,NON_MATCH,0.7218
+PAIRE_037,Réaliser le câblage,Modem câble,SN_MQ7,NON_MATCH,NON_MATCH,NON_MATCH,0.7135
+PAIRE_038,Superviser les performances du réseau,Supervision du fonctionnement du réseau,SN_MQ15,NON_MATCH,MATCH,NON_MATCH,0.8945
+PAIRE_039,IDS,IDS,SN_MQ10,MATCH,MATCH,MATCH,1.0
+PAIRE_040,Configurer les imprimantes réseau,Composants matériels informatiques,SN_MQ14,MATCH,NON_MATCH,NON_MATCH,0.6308
+PAIRE_041,test réseau,Outils de test réseau,SN_MQ15,MATCH,MATCH,MATCH,0.9502
+PAIRE_042,support technique aux utilisateurs,Sauvegarde sur système client,SN_MQ11,NON_MATCH,NON_MATCH,NON_MATCH,0.5328
+PAIRE_043,Raccorder les clients au réseau,Supervision du fonctionnement du réseau,SN_MQ15,NON_MATCH,NON_MATCH,NON_MATCH,0.7191
+PAIRE_044,Sécuriser le réseau,Mise en œuvre de la sécurité réseau,SN_MQ10,MATCH,MATCH,MATCH,0.9407
+PAIRE_045,Effectuer les sauvegardes des données,Sauvegarde des données,SN_MQ11,MATCH,MATCH,MATCH,0.6897
+PAIRE_046,Diagnostiquer les pannes matérielles,Diagnostic des pannes matérielles,SN_MQ14,MATCH,MATCH,MATCH,0.9913
+PAIRE_047,cuivre,Relais,SN_MQ3,NON_MATCH,NON_MATCH,NON_MATCH,0.5241
+PAIRE_048,administrer l'architecture réseau,Développement d’applications réseau,SN_MQ13,NON_MATCH,NON_MATCH,NON_MATCH,0.7074
+PAIRE_049,CCNA/CCNP,NCP,SN_MQ7,NON_MATCH,NON_MATCH,NON_MATCH,0.7453
+PAIRE_050,Huawei,WAN,SN_MQ7,NON_MATCH,NON_MATCH,NON_MATCH,0.3626
