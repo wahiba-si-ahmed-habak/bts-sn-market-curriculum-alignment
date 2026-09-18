@@ -1,145 +1,155 @@
-# Alignement compétences marché-emploi / référentiel BTS SN
+# Market-Skill / BTS SN Curriculum Alignment
 
-Code et données accompagnant l'article soumis au *Journal of Computer
-Science and Technology (JCS&T)* : « Decoupled Multilingual Skill
-Extraction and Semantic Alignment for Curriculum–Industry Gap
-Detection ».
+Code and data accompanying the article submitted to the *Journal of
+Computer Science and Technology (JCS&T)*: "Decoupled Multilingual Skill
+Extraction and Semantic Alignment for Curriculum–Industry Gap Detection".
 
-**Note de transparence méthodologique** : ce dépôt inclut, en plus du
-pipeline final, les scripts de diagnostic et les tentatives antérieures
-qui ont mené aux choix méthodologiques rapportés dans l'article
-(notamment le passage d'un encodeur MiniLM à un encodeur mpnet). Chaque
-script ci-dessous est explicitement étiqueté selon son statut, **vérifié
-par exécution réelle** sur les données du dépôt — pas seulement par sa
-description.
+**Methodological transparency note**: in addition to the final pipeline,
+this repository includes the diagnostic scripts and earlier attempts
+that led to the methodological choices reported in the article (notably
+the switch from a MiniLM encoder to an mpnet encoder). Each script below
+is explicitly labeled according to its status, **verified by actual
+execution** on the repository's data — not only by its description.
 
-## Pipeline final (produit les chiffres rapportés dans l'article)
+## Final pipeline (produces the figures reported in the article)
 
 ```
-Offres d'emploi (texte brut)
+Job postings (raw text)
         │
         ▼
-[Étape 0, hors dépôt] Extraction NER — modèle M3, article compagnon [1]
+[Step 0, outside this repository] NER extraction — M3 model, companion article [1]
         │
         ▼
-[Étape 1] nouvel_echantillon_calibration.py
-          Filtrage + tirage stratifié par décile → 151 candidats uniques
+[Step 1] nouvel_echantillon_calibration.py
+         Filtering + decile-stratified sampling → 151 unique candidates
         │
         ▼
-[Étape 2] template_annotation_v2_paire_fixe.py
-          Calcul du top-1 par segment (encodeur utilisé à l'origine :
-          MiniLM) + préparation du template à double annotation
+[Step 2] template_annotation_v2_paire_fixe.py
+         Top-1 computation per segment (encoder originally used:
+         MiniLM) + preparation of the double-annotation template
         │
         ▼
-[Étape 3, MANUELLE] Annotation par 2 personnes, en aveugle
+[Step 3, MANUAL] Blind annotation by 2 annotators
         │
         ▼
-[Étape 4] recalibration_mpnet.py  ⭐ SCRIPT CLÉ
-          Reprend les MÊMES paires et labels de l'étape 2-3, mais
-          recalcule les scores de similarité avec l'encodeur mpnet
-          (plus robuste, cf. Détour méthodologique ci-dessous).
-          Produit : κ=0,717, seuil=0,7858, exactitude=86,0%,
-          spécificité=80,8%, rappel=91,7%, F1=0,8627
-          → Vérifié par ré-exécution : ces chiffres correspondent
-            exactement à ceux rapportés dans l'article.
+[Step 4] recalibration_mpnet.py  ⭐ KEY SCRIPT
+         Reuses the SAME pairs and labels from steps 2-3, but
+         recomputes similarity scores with the mpnet encoder
+         (more robust, see Methodological detour below).
+         Produces: κ=0.717, threshold=0.7858, accuracy=86.0%,
+         specificity=80.8%, recall=91.7%, F1=0.8627
+         → Verified by re-execution: these figures match exactly
+           those reported in the article.
         │
         ▼
-[Étape 5] recalcul_final_mpnet.py
-          Applique le seuil 0,7858 aux Groupes 1 (106 compétences) et
-          2 (51 compétences) → résultats finaux ALIGNÉ/GAP
+[Step 4bis] grid_search_validation.py
+         Confirmatory check (Sections 3.4/5.3): explicit grid search over
+         the same calibration sample, jointly maximizing F1 and Youden's
+         J index, to verify that the empirical midpoint threshold falls
+         within the grid-search-optimal decision region.
+         Produces: decision region [0.7736, 0.7886] (plateau width
+         0.015), which contains the midpoint threshold of 0.7858.
         │
         ▼
-[Étape 6] generer_figures_article.py
-          Génère les 4 figures de l'article (seuil 0,7858 codé en dur)
+[Step 5] recalcul_final_mpnet.py
+         Applies the 0.7858 threshold to Groups 1 (106 competencies)
+         and 2 (51 competencies) → final ALIGNED/GAP results
+        │
+        ▼
+[Step 6] generer_figures_article.py
+         Generates the article's 4 figures (threshold 0.7858 hard-coded)
 ```
 
-## Comparaisons de référence (Tableau 7 de l'article)
+## Baseline comparisons (Table 7 of the article)
 
-Deux scripts supplémentaires produisent les colonnes de comparaison du
-Tableau 7 (baseline Jaccard, Approches 1 et 2 sans seuil) :
+Two additional scripts produce the comparison columns of Table 7
+(Jaccard baseline, Approaches 1 and 2 without threshold):
 
-| Script | Rôle | Statut |
+| Script | Role | Status |
 |---|---|---|
-| `baseline_jaccard.py` | Similarité lexicale pure (aucun modèle) — écart moyen ≈0,28, échoue sur les paraphrases | ✅ Vérifié, chiffres cités dans l'article |
-| `approche_1_et_2.py` | Approche 1 (ESCOXLM-R+DAPT, écart=0,02) et Approche 2 (Sentence-BERT MiniLM sans seuil, écart=0,26 préliminaire) | ✅ Vérifié — Approche 2 remesurée avec mpnet dans `recalibration_mpnet.py` (écart final=0,24, cf. Section 4.6) |
+| `baseline_jaccard.py` | Pure lexical similarity (no model) — average gap ≈0.28, fails on paraphrases | ✅ Verified, figures cited in the article |
+| `approche_1_et_2.py` | Approach 1 (ESCOXLM-R+DAPT, gap=0.02) and Approach 2 (Sentence-BERT MiniLM without threshold, preliminary gap=0.26) | ✅ Verified — Approach 2 re-measured with mpnet in `recalibration_mpnet.py` (final gap=0.24, see Section 4.6) |
 
-**Note sur le fichier source original** : ces deux scripts sont des
-versions nettoyées d'un notebook original (`alignement_approche_1_et_2.py`,
-~1300 lignes) contenant majoritairement du code de génération de
-figures pour une version antérieure de l'article (seuil 0,55). Ce code
-de figures n'est pas repris ici pour éviter toute confusion avec les
-figures finales de `generer_figures_article.py`.
+**Note on the original source file**: these two scripts are cleaned-up
+versions of an original notebook (`alignement_approche_1_et_2.py`,
+~1300 lines) containing mostly figure-generation code for an earlier
+version of the article (threshold=0.55). That figure code is not
+included here to avoid confusion with the final figures produced by
+`generer_figures_article.py`.
 
-## Détour méthodologique (diagnostic, pas dans le pipeline numérique final)
+## Methodological detour (diagnostic, not part of the final numeric pipeline)
 
-Trois scripts documentent **pourquoi** l'encodeur mpnet a remplacé
-MiniLM — conservés pour la transparence scientifique de la démarche,
-même s'ils ne produisent aucun chiffre rapporté dans l'article :
+Three scripts document **why** the mpnet encoder replaced MiniLM —
+kept for scientific transparency of the process, even though they
+produce no figure reported in the article:
 
-| Script | Rôle |
+| Script | Role |
 |---|---|
-| `diagnostic_top1_pare_feu.py` | Révèle qu'une paire évidente ("pare-feu") obtient un score anormalement bas avec MiniLM (0,24) |
-| `diagnostic_systematique_groupe1.py` | Étend ce diagnostic aux 106 compétences du Groupe 1 |
-| `test_modele_plus_puissant.py` | Compare directement MiniLM vs mpnet sur les cas problématiques identifiés, confirmant l'amélioration |
+| `diagnostic_top1_pare_feu.py` | Reveals that an obvious pair ("firewall") gets an abnormally low score with MiniLM (0.24) |
+| `diagnostic_systematique_groupe1.py` | Extends this diagnostic to the 106 competencies of Group 1 |
+| `test_modele_plus_puissant.py` | Directly compares MiniLM vs mpnet on the identified problem cases, confirming the improvement |
 
-## Scripts périmés (conservés pour transparence, non utilisés dans l'article)
+## Deprecated scripts (kept for transparency, not used in the article)
 
-⚠️ **Ces deux scripts ont été testés et produisent des chiffres différents
-de ceux de l'article** — ils correspondent à une itération antérieure,
-basée sur l'encodeur MiniLM, avant le diagnostic ci-dessus :
+⚠️ **These two scripts have been tested and produce figures different
+from those in the article** — they correspond to an earlier iteration,
+based on the MiniLM encoder, prior to the diagnostic above:
 
-| Script | Ce qu'il produit réellement (vérifié) | Chiffres de l'article |
+| Script | What it actually produces (verified) | Article figures |
 |---|---|---|
-| `calcul_seuil_final.py` | Seuil=0,8257 ; exactitude=78,0% ; spécificité=73,1% ; rappel=83,3% | Seuil=0,7858 ; exactitude=86,0% |
-| `recalcul_groupes_nouveau_seuil.py` | Applique le seuil périmé 0,8257 aux Groupes 1/2 | — |
+| `calcul_seuil_final.py` | Threshold=0.8257; accuracy=78.0%; specificity=73.1%; recall=83.3% | Threshold=0.7858; accuracy=86.0% |
+| `recalcul_groupes_nouveau_seuil.py` | Applies the deprecated 0.8257 threshold to Groups 1/2 | — |
 
-**Si vous exécutez ces deux scripts, vous n'obtiendrez pas les résultats
-de l'article** — utilisez `recalibration_mpnet.py` et
-`recalcul_final_mpnet.py` à la place.
+**If you run these two scripts, you will not obtain the article's
+results** — use `recalibration_mpnet.py` and `recalcul_final_mpnet.py`
+instead.
 
-## Contenu de `donnees/`
+## Contents of `donnees/`
 
-| Fichier | Contenu |
+| File | Contents |
 |---|---|
-| `template_annotation_v2_aveugle.csv` | 50 paires, jugements bruts des 2 annotateurs (sans score) |
-| `template_annotation_v2_reference.csv` | Mêmes paires, scores MiniLM (historique, étape 2) |
-| `calibration_mpnet_finale.csv` | Échantillon final, scores mpnet + labels consensuels (étape 4) |
-| `resultats_groupe1_MPNET_FINAL.csv` | Résultats finaux, Groupe 1 (106 compétences) |
-| `resultats_groupe2_MPNET_FINAL.csv` | Résultats finaux, Groupe 2 (51 compétences) |
+| `template_annotation_v2_aveugle.csv` | 50 pairs, raw judgments from the 2 annotators (no score) |
+| `template_annotation_v2_reference.csv` | Same pairs, MiniLM scores (historical, step 2) |
+| `calibration_mpnet_finale.csv` | Final sample, mpnet scores + consensus labels (step 4) |
+| `resultats_groupe1_MPNET_FINAL.csv` | Final results, Group 1 (106 competencies) |
+| `resultats_groupe2_MPNET_FINAL.csv` | Final results, Group 2 (51 competencies) |
 
-## Non inclus dans ce dépôt
+## Not included in this repository
 
-- **Référentiel institutionnel** (`PE_SN_segments_harmonized.csv`) : non
-  diffusé publiquement (restrictions d'accès institutionnelles) ;
-  disponible sur demande raisonnable.
-- **Offres d'emploi sources** : construites par les auteurs pour cette
-  preuve de concept (Section 4.1 de l'article) ; non diffusées.
-- **`entites_extraites_m3.csv`** (sortie de l'Étape 0) : dépend du modèle
-  M3, décrit dans l'article compagnon [1], non redistribué ici.
+- **Institutional curriculum reference** (`PE_SN_segments_harmonized.csv`):
+  not publicly released (institutional access restrictions); available
+  upon reasonable request.
+- **Source job postings**: compiled by the authors for this proof of
+  concept (Section 4.1 of the article); not released.
+- **`entites_extraites_m3.csv`** (output of Step 0): depends on the M3
+  model, described in the companion article [1], not redistributed here.
 
-## Reproduire les résultats de l'article
+## Reproducing the article's results
 
 ```bash
 pip install pandas numpy scipy scikit-learn sentence-transformers matplotlib
 
-# Étape 4 : calibration finale (mpnet) — produit κ=0,717, seuil=0,7858
+# Step 4: final calibration (mpnet) — produces κ=0.717, threshold=0.7858
 python recalibration_mpnet.py
 
-# Étape 5 : application aux Groupes 1 et 2
+# Step 4bis: grid-search validation of the threshold (Sections 3.4/5.3)
+python grid_search_validation.py
+
+# Step 5: application to Groups 1 and 2
 python recalcul_final_mpnet.py
 
-# Étape 6 : figures
+# Step 6: figures
 python generer_figures_article.py
 ```
 
 ## Citation
 
-Si vous utilisez ce code ou ces données, merci de citer l'article
-(référence complète ajoutée après publication).
+If you use this code or data, please cite the article (full reference
+to be added upon publication).
 
-## Licence
+## License
 
-Le code de ce dépôt est publié sous licence MIT (voir le fichier
-`LICENSE`). Les données (`donnees/`) sont mises à disposition pour un
-usage académique/non-commercial, en cohérence avec la licence
-CC BY-NC-SA 4.0 de l'article associé.
+The code in this repository is released under the MIT License (see the
+`LICENSE` file). The data (`donnees/`) is made available for
+academic/non-commercial use, consistent with the CC BY-NC-SA 4.0
+license of the associated article.
