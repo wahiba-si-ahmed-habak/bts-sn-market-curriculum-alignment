@@ -1,9 +1,9 @@
 # Alignement compétences marché-emploi / référentiel BTS SN
 
-Code et données accompagnant l'article soumis à *Computer Applications in
-Engineering Education* : « Outil d'aide à l'ingénierie de formation :
-alignement automatique des compétences marché-emploi par découplage
-NER/Similarité et calibration empirique du seuil ».
+Code et données accompagnant l'article soumis au *Journal of Computer
+Science and Technology (JCS&T)* : « Decoupled Multilingual Skill
+Extraction and Semantic Alignment for Curriculum–Industry Gap
+Detection ».
 
 **Note de transparence méthodologique** : ce dépôt inclut, en plus du
 pipeline final, les scripts de diagnostic et les tentatives antérieures
@@ -139,5 +139,7 @@ Si vous utilisez ce code ou ces données, merci de citer l'article
 
 ## Licence
 
-[À compléter -- MIT recommandée pour le code, CC-BY pour les données,
-sauf contrainte institutionnelle contraire]
+Le code de ce dépôt est publié sous licence MIT (voir le fichier
+`LICENSE`). Les données (`donnees/`) sont mises à disposition pour un
+usage académique/non-commercial, en cohérence avec la licence
+CC BY-NC-SA 4.0 de l'article associé.
